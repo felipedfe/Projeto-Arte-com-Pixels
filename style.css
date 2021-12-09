@@ -1,5 +1,6 @@
 #color-palette {
   display:flex;
+  margin-bottom: 20px;
 }
 
 .linhas {
@@ -9,34 +10,34 @@
 #red {
   background-color:red;
   border: solid black 1px;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 #green {
   background-color:green;
   border: solid black 1px;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 #blue {
   background-color: blue;
   border: solid black 1px;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 #black {
   background-color: black;
   border: solid black 1px;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 .pixel {
   background-color: white;
   border: solid black 1px;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
 }
