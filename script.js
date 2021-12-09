@@ -27,7 +27,30 @@ window.onload = function () {
     cores[i].addEventListener("click", selecao);
   }
 
-  //
+  //Preenchendo pixels do quadro
+  let pixels = document.getElementsByClassName("pixel");
+
+  for (let i = 0; i < pixels.length; i += 1){
+    pixels[i].addEventListener("click", mudaCorPixel);
+  }
+
+  function mudaCorPixel (evento) {
+    let pixelClicado = evento.target;
+    let corDaPaleta = document.querySelector(".selected");    //pega o elemento
+    corDaPaleta = getComputedStyle(corDaPaleta).backgroundColor;      //pega a cor do elemento no CSS
+    console.log(corDaPaleta);
+    pixelClicado.style.backgroundColor = corDaPaleta;
+  }
+
+  //Botão
+  let botao = document.getElementById("clear-board");
+  botao.addEventListener("click", limpaQuadro);
+
+  function limpaQuadro () {
+    for (let i = 0; i < pixels.length; i += 1) {
+      pixels[i].style.backgroundColor = "white";
+    }
+  }
 
 
 
