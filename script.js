@@ -1,6 +1,6 @@
 window.onload = function () {
 
-  //Adicionando o quadro de pixels
+  // Adicionando o quadro de pixels
   let linhas = document.getElementsByClassName("linhas");
   
   for (let c = 0; c < linhas.length; c += 1) {
@@ -10,7 +10,7 @@ window.onload = function () {
     }
   }
 
-  //Selecionando as cores da paleta
+  // Selecionando as cores da paleta
   function selecao (evento) {
     let elementoClicado = evento.target;
     for (let i = 0; i < cores.length; i += 1) {
@@ -27,7 +27,7 @@ window.onload = function () {
     cores[i].addEventListener("click", selecao);
   }
 
-  //Preenchendo pixels do quadro
+  // Preenchendo pixels do quadro
   let pixels = document.getElementsByClassName("pixel");
 
   for (let i = 0; i < pixels.length; i += 1){
@@ -36,13 +36,13 @@ window.onload = function () {
 
   function mudaCorPixel (evento) {
     let pixelClicado = evento.target;
-    let corDaPaleta = document.querySelector(".selected");    //pega o elemento
-    corDaPaleta = getComputedStyle(corDaPaleta).backgroundColor;      //pega a cor do elemento no CSS
+    let corDaPaleta = document.querySelector(".selected");    // pega o elemento
+    corDaPaleta = getComputedStyle(corDaPaleta).backgroundColor;      //  pega a cor do elemento no CSS
     console.log(corDaPaleta);
     pixelClicado.style.backgroundColor = corDaPaleta;
   }
 
-  //Botão
+  // Botão
   let botao = document.getElementById("clear-board");
   botao.addEventListener("click", limpaQuadro);
 
@@ -52,7 +52,15 @@ window.onload = function () {
     }
   }
 
+  // Input e botão gerador de tamanho
+  let botaoGenerateBoard = document.getElementById("generate-board");
+  botaoGenerateBoard.addEventListener("click", novoTamanho);
 
+  function novoTamanho () {
+    let input = document.getElementById("board-size").value;
+    let pixelBoard = document.getElementById("pixel-board");
+    console.log(pixelBoard)
+  }
 
 
 
