@@ -1,12 +1,19 @@
 window.onload = function () {
 
   // Adicionando o quadro de pixels
-  let linhas = document.getElementsByClassName("linhas");
+  let linhasEColunas = 5;
   
-  for (let c = 0; c < linhas.length; c += 1) {
-    for (let i = 0; i < linhas.length; i += 1) {
+  for (let c = 0; c < linhasEColunas; c += 1) {                 // 1o FOR cria as linhas
+    let divLinhas = document.createElement("div")
+    divLinhas.className = "linhas";
+    let pixelBoard = document.getElementById("pixel-board");
+    pixelBoard.appendChild(divLinhas);
+  }
+  for (let i = 0; i < linhasEColunas; i += 1) {                     // 2o/3o FOR preenche as linhas com os pixels
+    divLinhas = document.getElementsByClassName("linhas");
+    for (let c = 0; c < linhasEColunas; c += 1) {
       let bloquinho = document.createElement("div");
-      linhas[c].appendChild(bloquinho).className = "pixel";
+      divLinhas[i].appendChild(bloquinho).className = "pixel";
     }
   }
 
@@ -58,8 +65,6 @@ window.onload = function () {
 
   function novoTamanho () {
     let input = document.getElementById("board-size").value;
-    let pixelBoard = document.getElementById("pixel-board");
-    console.log(pixelBoard)
   }
 
 
