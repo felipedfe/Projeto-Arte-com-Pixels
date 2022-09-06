@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +13,26 @@
 </head>
 
 <body>
-  <h1 id="title">Paleta de Cores</h1>
-  <div id="color-palette">
-    <div id="black" class="color selected"></div>
-    <div id="red" class="color"></div>
-    <div id="green" class="color"></div>
-    <div id="blue" class="color"></div>
-  </div>
-  <input type="number" pattern="^[0-9]" min="1" max="50" id="board-size" name="board-size">
-  <button id="generate-board">VQV</button>
-  <button id="clear-board">Limpar</button>
-  <div id="pixel-board"></div>
+  <main class="app">
+    <h1 class="title">Pixel Art!</h1>
+    Selecione a cor:
+    <div class="color-palette">
+      <div id="white" class="color"></div>
+      <div id="black" class="color selected"></div>
+      <div id="yellow" class="color"></div>
+      <div id="red" class="color"></div>
+      <div id="blue" class="color"></div>
+    </div>
+    <div class="buttons-container">
+      Tamanho do board ->
+      <input type="number" pattern="^[0-9]" min="1" max="50" id="board-size" name="board-size" value="10">
+      <button id="generate-board">Vai!</button>
+      <button id="clear-board">Limpar</button>
+    </div>
+    <div id="pixel-board"></div>
+  </main>
 
   <script src="script.js"></script>
 </body>
+
 </html>

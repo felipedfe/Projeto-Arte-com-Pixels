@@ -1,4 +1,51 @@
-#color-palette {
+* {
+  font-family: 'Silkscreen', cursive;
+}
+
+body {
+  background-image: url('fundo4.jpg');
+  background-size: 600px
+}
+
+button {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 2px;
+  border: solid #000 2px ;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.title {
+  font-family: 'Silkscreen', cursive;
+  background-color: #FFF;
+  padding: 1rem;
+  border: solid #000 3px ;
+}
+
+#pixel-board, .color-palette{
+  border: solid #000 2px ;
+}
+
+#pixel-board {
+  margin-top: 10px;
+}
+
+.app {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fundo-container {
+  background-color: aquamarine;
+  width: 80%;
+}
+
+.color-palette {
   display:flex;
   margin-bottom: 10px;
 }
@@ -7,29 +54,7 @@
   display:flex;
 }
 
-#red {
-  background-color:yellow;
-  border: solid black 1px;
-  width: 55px;
-  height: 55px;
-}
-
-#green {
-  background-color:pink;
-  border: solid black 1px;
-  width: 55px;
-  height: 55px;
-}
-
-#blue {
-  background-color: blue;
-  border: solid black 1px;
-  width: 55px;
-  height: 55px;
-}
-
-#black {
-  background-color: black;
+.color {
   border: solid black 1px;
   width: 55px;
   height: 55px;
@@ -40,4 +65,28 @@
   border: solid black 1px;
   width: 40px;
   height: 40px;
+}
+
+.color:hover {
+  box-shadow: inset 0px 0px 0px 2px rgb(9, 255, 0);
+}
+
+#yellow {
+  background-color:yellow;
+}
+
+#red {
+  background-color:red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#black {
+  background-color: black;
+}
+
+#white {
+  background-color: white;
 }
