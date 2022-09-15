@@ -1,4 +1,4 @@
-const tamanhoInicialDoQuadro = 10;
+const tamanhoInicialDoQuadro = 8;
 const cores = document.getElementsByClassName('color');
 const botaoClear = document.getElementById('clear-board');
 const botaoGenerateBoard = document.getElementById('generate-board');
