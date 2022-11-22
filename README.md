@@ -1,4 +1,5 @@
 # Arte com Pixels
+![Tela da aplicação](https://github.com/felipedfe/felipedfe.github.io/blob/main/imagens/03-pixelart.jpg)
 
 ## •Descrição
 Uma aplicação onde o usuário pode criar desenhos no estilo Pixel Art! A paleta de cores consiste nas cores primárias, além do preto e do branco. É possível também redimensionar o tamanho do canvas para se fazer desenhos mais detalhados.
