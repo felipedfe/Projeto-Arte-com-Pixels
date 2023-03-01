@@ -1,11 +1,11 @@
-# Arte com Pixels
+# Pixel Art
 ![Tela da aplicação](https://github.com/felipedfe/felipedfe.github.io/blob/main/imagens/03-pixelart.jpg)
 
-## •Descrição
-Uma aplicação onde o usuário pode criar desenhos no estilo Pixel Art! A paleta de cores consiste nas cores primárias, além do preto e do branco. É possível também redimensionar o tamanho do canvas para se fazer desenhos mais detalhados.
-O script em JavaScript foi utilizado para manipular os elementos do DOM e também para adicionar escutadores de eventos a eles, dando dinamismo à página HTML.
+## •Description
+An application where the user can create drawings in Pixel Art style! The color palette consists of the primary colors plus black and white. It is also possible to resize the canvas size to make more detailed drawings.
+The JavaScript was used to manipulate the DOM elements and also to add event listeners to them, giving dynamism to the HTML page.
 
-## •Tecnologias
+## •Technologies
 - Javascript
 - HTML
 - CSS
